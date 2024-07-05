@@ -1,6 +1,7 @@
 .responsiveContainer {
     max-width: 1024px;
-  
+    text-align: left;
+    color: antiquewhite;
     @media (min-width: em(500px)) {
       max-width: 400px;
     }
@@ -20,5 +21,33 @@
   
     @media (min-width: em(750px)) {
       display: block;
+    }
+  }
+  .image {
+    /* width: 700px; */
+    margin-left: 20px;
+    @media (min-width: em(500px)) {
+      max-width: 300px;
+    }
+  
+    @media (min-width: em(750px)) {
+      max-width: 700px;
+    }
+  }
+  .button {
+    background-color:  #d017b8;;
+    transition: background-color 0.25s;
+    border-radius: 35;
+    font-size: medium;
+    max-width: 100%;
+    margin: 20;
+    &:hover {
+      background-color: #370b58;
+    }
+    @media (max-width: em(750px)) {
+      min-width: 90px;
+      font-size: 10px;
+
+
     }
   }
